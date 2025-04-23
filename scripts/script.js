@@ -147,10 +147,18 @@ playAgainBtn.addEventListener("click", getNextWord);
 
 
 document.addEventListener("keydown", (e) => {
-    // Ignore if input is focused or modal is shown
-    if (document.activeElement.tagName === "INPUT" || gameModal.classList.contains("show")) return;
-
     const key = e.key.toLowerCase();
+
+    // 👉 When modal is open, allow pressing "Enter" to play again
+    if (gameModal.classList.contains("show")) {
+        if (key === "enter") {
+            playAgainBtn.click(); // simulate click on the button
+        }
+        return; // don't process anything else while modal is open
+    }
+
+    // Ignore if input is focused
+    if (document.activeElement.tagName === "INPUT") return;
 
     // Only handle a-z keys
     if (key >= "a" && key <= "z") {
@@ -161,7 +169,6 @@ document.addEventListener("keydown", (e) => {
             button.click();
         }
     }
-    console.log("Keyboard buttons:", [...keyboardDiv.querySelectorAll("button")].map(b => b.innerText));
-
 });
+
  
