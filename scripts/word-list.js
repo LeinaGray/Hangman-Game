@@ -305,8 +305,8 @@ const wordList = [
     word: "company owned networking website",
     hints: [
       "It’s a social site built and run by a business for its own community",
-      "The company has full control over the site's design and content",
       "This platform helps connect customers or employees in a brand-centered space",
+      "The company has full control over the site's design and content",
       "Think of it as Facebook, but made just for one company’s needs",
       "It’s a private online space where the company manages all interactions",
      ]
@@ -334,11 +334,11 @@ const wordList = [
   {
     word: "direct advertising",
     hints: [
-      "It’s when businesses pay to show ads straight to users online",
       "Think of banner ads popping up while you scroll through social media",
+      "You’ve likely seen it as sponsored posts or sidebar ads on websites",
+      "It’s when businesses pay to show ads straight to users online",
       "This method uses paid placements to promote products or services",
       "It targets users directly with promotional messages on digital platforms",
-      "You’ve likely seen it as sponsored posts or sidebar ads on websites",
      ]
   }
 ];
