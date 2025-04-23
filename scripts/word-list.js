@@ -289,6 +289,86 @@ const wordList = [
       "No restrictions on usage.",
       "Belongs to everyone."
     ]
+  },
+  //TOPIC 11
+  {
+    word: "viral marketing",
+    hints: [
+      "It's a strategy that spreads a message like a contagious trend",
+      "One person shares it, then many more follow—just like a chain reaction",
+      "This type of promotion relies on people passing it along",
+      "Think of it as word-of-mouth advertising powered by social media",
+      "It grows fast, like a meme or video everyone suddenly talks about"
+     ]
+  },
+  {
+    word: "company owned networking website",
+    hints: [
+      "It’s a social site built and run by a business for its own community",
+      "The company has full control over the site's design and content",
+      "This platform helps connect customers or employees in a brand-centered space",
+      "Think of it as Facebook, but made just for one company’s needs",
+      "It’s a private online space where the company manages all interactions",
+     ]
+  },
+  {
+    word: "social networking",
+    hints: [
+      "It's all about building relationships and communities over the internet",
+      "It’s where people connect online regardless of where they are in the world",
+      "This platform lets users share their thoughts, photos, and life updates",
+      "It breaks down distance and time by keeping everyone socially connected online",
+      "You can meet friends, join groups, and stay updated—all in one place",
+     ]
+  },
+  {
+    word: "social network in hiring",
+    hints: [
+      "Employers now check Facebook or LinkedIn when scouting talent",
+      "It’s how recruiters use social platforms to find future employees",
+      "Social media has become a tool in the recruitment process",
+      "It’s the modern way of hiring through online connections",
+      "A tweet or post might just land you a job—or cost you one",
+     ]
+  },
+  {
+    word: "direct advertising",
+    hints: [
+      "It’s when businesses pay to show ads straight to users online",
+      "Think of banner ads popping up while you scroll through social media",
+      "This method uses paid placements to promote products or services",
+      "It targets users directly with promotional messages on digital platforms",
+      "You’ve likely seen it as sponsored posts or sidebar ads on websites",
+     ]
   }
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
