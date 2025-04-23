@@ -25,14 +25,6 @@ const resetGame = () => {
     gameModal.classList.remove("show");
 }
 
-// const getRandomWord = () => {
-//     // Selecting a random word and hint from the wordList
-//     const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
-//     currentWord = word; // Making currentWord as random word
-//     document.querySelector(".hint-text b").innerText = hint;
-//     resetGame();
-// }
-
 const getRandomWord = () => {
     const randomWord = wordList[Math.floor(Math.random() * wordList.length)];
     currentWord = randomWord.word;
@@ -63,11 +55,6 @@ const initGame = (button, clickedLetter) => {
                 wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
             }
         });
-    // } else {
-    //     // If clicked letter doesn't exist then update the wrongGuessCount and hangman image
-    //     wrongGuessCount++;
-    //     hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
-    // }
         } else {
             wrongGuessCount++;
             hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
