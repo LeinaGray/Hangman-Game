@@ -61,14 +61,32 @@ const resetGame = () => {
 
 }
 
-const getRandomWord = () => {
-    const randomWord = wordList[Math.floor(Math.random() * wordList.length)];
-    currentWord = randomWord.word;
-    currentHints = randomWord.hints;
+// const getRandomWord = () => {
+//     const randomWord = wordList[Math.floor(Math.random() * wordList.length)];
+//     currentWord = randomWord.word;
+//     currentHints = randomWord.hints;
+//     hintIndex = 0;
+//     document.querySelector(".hint-text b").innerText = currentHints[hintIndex];
+//     resetGame();
+// };
+
+let currentWordIndex = 0; // 👈 Track current index
+
+const getNextWord = () => {
+    // If we go past the end, loop back to start (optional)
+    if (currentWordIndex >= wordList.length) currentWordIndex = 0;
+
+    const nextWord = wordList[currentWordIndex];
+    currentWord = nextWord.word;
+    currentHints = nextWord.hints;
     hintIndex = 0;
     document.querySelector(".hint-text b").innerText = currentHints[hintIndex];
+    document.getElementById("question-no").innerText = `Question No. ${currentWordIndex + 1}`; // 👈 Add this line
     resetGame();
+
+    currentWordIndex++; // 👈 Advance to next word for future round
 };
+
 
 
 const gameOver = (isVictory) => {
@@ -124,8 +142,9 @@ for (let i = 97; i <= 122; i++) {
 }
   
 
-getRandomWord();
-playAgainBtn.addEventListener("click", getRandomWord);
+getNextWord();
+playAgainBtn.addEventListener("click", getNextWord);
+
 
 document.addEventListener("keydown", (e) => {
     // Ignore if input is focused or modal is shown

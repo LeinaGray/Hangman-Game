@@ -228,5 +228,12 @@ body {
 .keyboard-instructions {
     margin-top: 1rem;
 }
+.question-number {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20%;
+    color: #5E63BA;
+}
+
 
   
