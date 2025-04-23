@@ -13,6 +13,29 @@ const maxGuesses = 5;
 let currentHints = [];
 let hintIndex = 0;
 
+// add timer
+let countdown; // Timer interval reference
+let timerDisplay = document.getElementById("timer"); // make sure you have this element in your HTML
+
+function startTimer() {
+    clearInterval(countdown); // reset if already running
+    let timeLeft = 60;
+  
+    countdown = setInterval(() => {
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+        timerDisplay.textContent = "0:00 seconds";
+        // 🔴 Add your time-out logic here
+        // Example: disable buttons, auto-miss, show "time's up" message, etc.
+      } else {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds} seconds`;
+        timeLeft--;
+      }
+    }, 1000);
+  }
+  
 
 const resetGame = () => {
     // Ressetting game variables and UI elements
@@ -23,6 +46,8 @@ const resetGame = () => {
     wordDisplay.innerHTML = currentWord.split("").map(() => `<li class="letter"></li>`).join("");
     keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
     gameModal.classList.remove("show");
+    startTimer();
+
 }
 
 const getRandomWord = () => {
@@ -37,6 +62,7 @@ const getRandomWord = () => {
 
 const gameOver = (isVictory) => {
     // After game complete.. showing modal with relevant details
+    clearInterval(countdown);
     const modalText = isVictory ? `You found the word:` : 'The correct word was:';
     gameModal.querySelector("img").src = `images/${isVictory ? 'victory' : 'lost'}.gif`;
     gameModal.querySelector("h4").innerText = isVictory ? 'Congrats!' : 'Game Over!';
@@ -81,3 +107,4 @@ for (let i = 97; i <= 122; i++) {
 
 getRandomWord();
 playAgainBtn.addEventListener("click", getRandomWord);
+
