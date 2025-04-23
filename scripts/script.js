@@ -122,7 +122,27 @@ for (let i = 97; i <= 122; i++) {
     keyboardDiv.appendChild(button);
     button.addEventListener("click", (e) => initGame(e.target, String.fromCharCode(i)));
 }
+  
 
 getRandomWord();
 playAgainBtn.addEventListener("click", getRandomWord);
 
+document.addEventListener("keydown", (e) => {
+    // Ignore if input is focused or modal is shown
+    if (document.activeElement.tagName === "INPUT" || gameModal.classList.contains("show")) return;
+
+    const key = e.key.toLowerCase();
+
+    // Only handle a-z keys
+    if (key >= "a" && key <= "z") {
+        const button = [...keyboardDiv.querySelectorAll("button")]
+            .find(btn => btn.innerText.toLowerCase() === key);
+
+        if (button && !button.disabled) {
+            button.click();
+        }
+    }
+    console.log("Keyboard buttons:", [...keyboardDiv.querySelectorAll("button")].map(b => b.innerText));
+
+});
+ 
