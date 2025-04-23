@@ -1,12 +1,12 @@
 const wordList = [
     {
-      word: "guitar",
+      word: "usage metered license",
       hints: [
-        "It has six strings.",
-        "Often made of wood.",
-        "Used in rock and blues.",
-        "Played by strumming or plucking.",
-        "A musical instrument."
+        "This type of license often restricts modification of the software's source code.",
+        "You typically pay a fee to use software under this license.",
+        "Examples include licenses for many commercial operating systems and applications.",
+        "The company that developed the software retains the intellectual property rights.",
+        "Think of owning something exclusively."
       ]
     },
     {

@@ -17,6 +17,7 @@ let hintIndex = 0;
 let countdown; // Timer interval reference
 let timerDisplay = document.getElementById("timer"); // make sure you have this element in your HTML
 
+
 function startTimer() {
     clearInterval(countdown); // reset if already running
     let timeLeft = 60;
@@ -26,6 +27,7 @@ function startTimer() {
         clearInterval(countdown);
         timerDisplay.textContent = "0:00 seconds";
         // 🔴 Add your time-out logic here
+        gameOver(false); // show game over modal for timeout
         // Example: disable buttons, auto-miss, show "time's up" message, etc.
       } else {
         const minutes = Math.floor(timeLeft / 60);
@@ -38,12 +40,21 @@ function startTimer() {
   
 
 const resetGame = () => {
+    score = 5;
+    document.getElementById("score").innerText = `Points: ${score}`;
     // Ressetting game variables and UI elements
     correctLetters = [];
     wrongGuessCount = 0;
     hangmanImage.src = "images/hangman-0.svg";
     guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
-    wordDisplay.innerHTML = currentWord.split("").map(() => `<li class="letter"></li>`).join("");
+    wordDisplay.innerHTML = currentWord.split("").map(char =>
+        char === " " ? `<li class="letter space"> </li>` : `<li class="letter"></li>`
+      ).join("");   
+    document.querySelectorAll(".word-display .letter").forEach((li, index) => {
+    if (currentWord[index] === " ") {
+        li.classList.add("guessed");
+    }
+    });  
     keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
     gameModal.classList.remove("show");
     startTimer();
@@ -71,6 +82,7 @@ const gameOver = (isVictory) => {
 }
 
 const initGame = (button, clickedLetter) => {
+    
     // Checking if clickedLetter is exist on the currentWord
     if(currentWord.includes(clickedLetter)) {
         // Showing all correct letters on the word display
@@ -82,8 +94,12 @@ const initGame = (button, clickedLetter) => {
             }
         });
         } else {
+            //add wrong guess count
             wrongGuessCount++;
             hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
+            //deduct score
+            score = Math.max(0, score - 1); // prevent score from going below 0
+            document.getElementById("score").innerText = `Points: ${score}`;
             if (hintIndex < currentHints.length - 1) {
                 hintIndex++;
                 document.querySelector(".hint-text b").innerText = currentHints[hintIndex];
@@ -94,7 +110,9 @@ const initGame = (button, clickedLetter) => {
 
     // Calling gameOver function if any of these condition meets
     if(wrongGuessCount === maxGuesses) return gameOver(false);
-    if(correctLetters.length === currentWord.length) return gameOver(true);
+    const totalLetters = currentWord.replace(/ /g, "").length;
+    if (correctLetters.length === totalLetters) return gameOver(true);
+
 }
 
 // Creating keyboard buttons and adding event listeners
