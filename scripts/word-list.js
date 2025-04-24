@@ -347,6 +347,17 @@ const wordList2 = [ //change to wordList and uncomment above to start hangman ga
     ]
   },
   {
+    word: "data misuse",
+    hints: [
+      "It involves using personal information for purposes not originally intended.",
+      "Companies collecting your online activity need to handle it responsibly.",
+      "This can lead to privacy violations and security risks.",
+      "Regulations like GDPR aim to prevent this unethical practice.",
+      "Understanding privacy policies is important to protect yourself.",
+      "The unauthorized or inappropriate use of collected information."
+    ]
+  },
+  {
     word: "social networking",
     hints: [
       "It's all about building relationships and communities over the internet",
@@ -358,6 +369,17 @@ const wordList2 = [ //change to wordList and uncomment above to start hangman ga
     ]
   },
   {
+    word: "cyberstalking",
+    hints: [
+      "It's a pattern of online behavior that makes someone feel afraid.",
+      "This can include monitoring someone's online activities without consent.",
+      "Perpetrators may use social media to track their victims.",
+      "It's a serious offense with legal consequences.",
+      "Feeling constantly watched or followed online is a sign.",
+      "Repeated online harassment that includes threats or monitoring."
+    ]
+  },
+  {
     word: "social network in hiring",
     hints: [
       "Employers now check Facebook or LinkedIn when scouting talent",
@@ -366,6 +388,17 @@ const wordList2 = [ //change to wordList and uncomment above to start hangman ga
       "It’s the modern way of hiring through online connections",
       "A tweet or post might just land you a job—or cost you one",
       "Utilizing online platforms to identify and recruit potential candidates."
+    ]
+  },
+  {
+    word: "deepfake",
+    hints: [
+      "It's a manipulated video or audio that looks and sounds real.",
+      "Artificial intelligence is often used to create these.",
+      "They can spread misinformation or damage someone's reputation.",
+      "Spotting them can be difficult, but there are clues to look for.",
+      "The technology behind them is rapidly advancing.",
+      "Synthetically altered media that convincingly portrays someone doing or saying something they didn't."
     ]
   },
   {
@@ -388,39 +421,6 @@ const wordList2 = [ //change to wordList and uncomment above to start hangman ga
       "The victim often feels trapped and isolated by these actions.",
       "Social media moderation tries to combat this harmful content.",
       "Repeated and hostile behavior using electronic communication."
-    ]
-  },
-  {
-    word: "cyberstalking",
-    hints: [
-      "It's a pattern of online behavior that makes someone feel afraid.",
-      "This can include monitoring someone's online activities without consent.",
-      "Perpetrators may use social media to track their victims.",
-      "It's a serious offense with legal consequences.",
-      "Feeling constantly watched or followed online is a sign.",
-      "Repeated online harassment that includes threats or monitoring."
-    ]
-  },
-  {
-    word: "deepfake",
-    hints: [
-      "It's a manipulated video or audio that looks and sounds real.",
-      "Artificial intelligence is often used to create these.",
-      "They can spread misinformation or damage someone's reputation.",
-      "Spotting them can be difficult, but there are clues to look for.",
-      "The technology behind them is rapidly advancing.",
-      "Synthetically altered media that convincingly portrays someone doing or saying something they didn't."
-    ]
-  },
-  {
-    word: "data misuse",
-    hints: [
-      "It involves using personal information for purposes not originally intended.",
-      "Companies collecting your online activity need to handle it responsibly.",
-      "This can lead to privacy violations and security risks.",
-      "Regulations like GDPR aim to prevent this unethical practice.",
-      "Understanding privacy policies is important to protect yourself.",
-      "The unauthorized or inappropriate use of collected information."
     ]
   },
   {
