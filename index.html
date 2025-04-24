@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman Game JavaScript | CodingNepal</title>
+    <title>Hangman Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Game Modal (shown when game ends) -->
     <div class="game-modal">
         <div class="content">
             <img src="#" alt="gif">
             <h4>Game Over!</h4>
             <p>The correct word was: <b>rainbow</b></p>
-            <button class="play-again">Play Again</button>
+            <button class="play-again">Back to Menu</button>
         </div>
     </div>
     
+    <!-- Number Selection Menu -->
+    <div class="menu-modal show">
+        <div class="content">
+            <h2>Select a Word to Play</h2>
+            <div class="number-grid">
+                <!-- Numbers 1-10 will be added dynamically -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Game Container (hidden initially) -->
     <div class="container">
         <div id="score" class="score">Points: 5</div>
         <div id="timer" class="timer">1:00 seconds</div>
@@ -30,9 +41,8 @@
                 <ul class="word-display"></ul>
                 <h4 class="hint-text">Hint: <b></b></h4>
                 <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
-                
                 <div class="keyboard"></div>
-                <p class = "keyboard-instructions"><center>type or click keyboard</center></p>
+                <p class="keyboard-instructions"><center>type or click keyboard</center></p>
             </div>
         </div>
     </div>
