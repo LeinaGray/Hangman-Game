@@ -349,11 +349,11 @@ const wordList2 = [ //change to wordList and uncomment above to start hangman ga
   {
     word: "data misuse",
     hints: [
-      "It involves using personal information for purposes not originally intended.",
-      "Companies collecting your online activity need to handle it responsibly.",
-      "This can lead to privacy violations and security risks.",
-      "Regulations like GDPR aim to prevent this unethical practice.",
-      "Understanding privacy policies is important to protect yourself.",
+      "Social media platforms often accused of this",
+      "Includes secondary use without data subject consent",
+      "Violates the principle of purpose limitation in data privacy",
+      "Unauthorized or unethical handling of personal information",
+      "Includes selling user data without consent",
       "The unauthorized or inappropriate use of collected information."
     ]
   },
@@ -371,11 +371,11 @@ const wordList2 = [ //change to wordList and uncomment above to start hangman ga
   {
     word: "cyberstalking",
     hints: [
-      "It's a pattern of online behavior that makes someone feel afraid.",
-      "This can include monitoring someone's online activities without consent.",
-      "Perpetrators may use social media to track their victims.",
-      "It's a serious offense with legal consequences.",
-      "Feeling constantly watched or followed online is a sign.",
+      "Often involves repeated, unwanted online contact",
+      "May escalate to real-world threats or doxxing",
+      "May involve GPS tracking or spyware installation",
+      "Involves persistent monitoring or surveillance through digital means",
+      "Often precedes physical stalking situations",
       "Repeated online harassment that includes threats or monitoring."
     ]
   },
@@ -413,14 +413,14 @@ const wordList2 = [ //change to wordList and uncomment above to start hangman ga
     ]
   },
   {
-    word: "cyberbullying",
+    word: "identity theft",
     hints: [
-      "It involves using digital devices to harm or harass someone.",
-      "Online platforms can be a space for this negative behavior.",
-      "It can take many forms, like spreading rumors or threats online.",
-      "The victim often feels trapped and isolated by these actions.",
-      "Social media moderation tries to combat this harmful content.",
-      "Repeated and hostile behavior using electronic communication."
+      "Common methods: phishing, data breaches, or malware",
+      "Enables credit card fraud or fake social media accounts",
+      "Financial institutions must report suspected cases within 24 hours",
+      "Often involves synthetic identity creation using partial real data",
+      "Stealing personal/financial data to impersonate someone",
+      "Requires unauthorized use of identifying information"
     ]
   },
   {
