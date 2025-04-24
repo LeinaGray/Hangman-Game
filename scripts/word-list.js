@@ -1,4 +1,5 @@
-// TOPIC 10: SOFTWARE LICENSE
+// TOPIC 10: SOFTWARE LICENSING
+
 const wordList = [
   {
     word: "software license",
@@ -7,7 +8,8 @@ const wordList = [
       "Defines user permissions.",
       "Governs the use of programs.",
       "Relates to intellectual property.",
-      "Agreement for software utilization."
+      "Agreement for software utilization.",
+      "A contract outlining software usage."
     ]
   },
   {
@@ -17,7 +19,8 @@ const wordList = [
       "Often abbreviated as EULA.",
       "Details acceptable software use.",
       "Must be agreed to for installation.",
-      "Governs the \"end\" user."
+      "Governs the \"end\" user.",
+      "Specifies terms for the final consumer."
     ]
   },
   {
@@ -27,7 +30,8 @@ const wordList = [
       "Permission to use the software.",
       "Can include copying or modifying.",
       "A key part of the license.",
-      "What the license provides to the user."
+      "What the license provides to the user.",
+      "Outlines the user's authorized actions."
     ]
   },
   {
@@ -37,7 +41,8 @@ const wordList = [
       "Actions the user is NOT allowed to do.",
       "Can involve reverse engineering.",
       "Protects the software owner.",
-      "Boundaries defined in the license."
+      "Boundaries defined in the license.",
+      "Specifies prohibited user activities."
     ]
   },
   {
@@ -47,7 +52,8 @@ const wordList = [
       "Covers various aspects of usage.",
       "Can include warranty disclaimers.",
       "Essential part of any legal contract.",
-      "The fine print of the license."
+      "The fine print of the license.",
+      "Comprehensive stipulations of the agreement."
     ]
   },
   {
@@ -57,7 +63,8 @@ const wordList = [
       "Software code falls under this.",
       "Includes copyrights and patents.",
       "What software licenses protect.",
-      "Ownership of creative work."
+      "Ownership of creative work.",
+      "Intangible assets with legal rights."
     ]
   },
   {
@@ -67,7 +74,8 @@ const wordList = [
       "Covers the expression of an idea.",
       "Automatic upon creation.",
       "Protects the software's code and design.",
-      "Prevents unauthorized copying."
+      "Prevents unauthorized copying.",
+      "Exclusive rights to reproduce and distribute."
     ]
   },
   {
@@ -77,7 +85,8 @@ const wordList = [
       "Protects brand identity.",
       "Can be a logo or slogan.",
       "Distinguishes software products.",
-      "Associated with brand recognition."
+      "Associated with brand recognition.",
+      "A mark legally registered to represent a company."
     ]
   },
   {
@@ -87,7 +96,8 @@ const wordList = [
       "Protects how software works.",
       "Granted by a government authority.",
       "Can cover algorithms or processes.",
-      "Protects the functional aspects."
+      "Protects the functional aspects.",
+      "Legal monopoly over an invention for a set period."
     ]
   },
   {
@@ -97,7 +107,8 @@ const wordList = [
       "Provides a competitive edge.",
       "Not publicly disclosed.",
       "Can include software algorithms.",
-      "Protected by secrecy."
+      "Protected by secrecy.",
+      "Proprietary information kept confidential."
     ]
   },
   {
@@ -107,7 +118,8 @@ const wordList = [
       "Source code usually not available.",
       "Often requires purchasing a license.",
       "Developer retains control.",
-      "\"Closed source\" is a common term."
+      "\"Closed source\" is a common term.",
+      "Exclusive ownership and control by the vendor."
     ]
   },
   {
@@ -117,7 +129,8 @@ const wordList = [
       "Can track features accessed.",
       "Cost varies with consumption.",
       "Like paying for utilities.",
-      "Measured software utilization."
+      "Measured software utilization.",
+      "Billing determined by the extent of use."
     ]
   },
   {
@@ -127,7 +140,8 @@ const wordList = [
       "Allows a set number to use it at once.",
       "Often used in organizations.",
       "Tracks active sessions.",
-      "Simultaneous access is controlled."
+      "Simultaneous access is controlled.",
+      "Restricts the number of users accessing at the same time."
     ]
   },
   {
@@ -137,7 +151,8 @@ const wordList = [
       "Users can access when available.",
       "Number of users is limited at any time.",
       "License moves between users.",
-      "Dynamic access for network users."
+      "Dynamic access for network users.",
+      "A limited number of licenses shared among many users."
     ]
   },
   {
@@ -147,7 +162,8 @@ const wordList = [
       "Covers all users at one \"site.\"",
       "Often cost-effective for organizations.",
       "Geographic limitation on usage.",
-      "Covers an entire premises."
+      "Covers an entire premises.",
+      "Permits usage by all users within a defined area."
     ]
   },
   {
@@ -157,7 +173,8 @@ const wordList = [
       "\"Try before you buy\" model.",
       "May have limited functionality.",
       "Encourages later registration.",
-      "Free for a limited time."
+      "Free for a limited time.",
+      "Software provided for evaluation before buying."
     ]
   },
   {
@@ -167,7 +184,8 @@ const wordList = [
       "Can have restrictions on modification.",
       "\"Gratis\" software.",
       "Developer retains copyright.",
-      "No payment required for use."
+      "No payment required for use.",
+      "Software distributed without charge."
     ]
   },
   {
@@ -177,7 +195,8 @@ const wordList = [
       "Allows modification and distribution.",
       "Often collaborative development.",
       "Grants significant user freedoms.",
-      "Transparency of the code."
+      "Transparency of the code.",
+      "Software with publicly available and modifiable source."
     ]
   },
   {
@@ -187,17 +206,19 @@ const wordList = [
       "A \"viral\" open source license.",
       "Aims to keep software free.",
       "Example is the GPL.",
-      "Enforces open source inheritance."
+      "Enforces open source inheritance.",
+      "Any modifications must also be released under the same license."
     ]
   },
   {
-    word: "gnu license",
+    word: "gnu",
     hints: [
       "Project promoting free software.",
       "Stands for \"GNU's Not Unix!\".",
       "Associated with strong copyleft licenses.",
       "Developed the GPL.",
-      "A key player in free software movement."
+      "A key player in free software movement.",
+      "An operating system and extensive collection of free software."
     ]
   },
   {
@@ -207,7 +228,8 @@ const wordList = [
       "Modifications to open source part must be open.",
       "More permissive than strong copyleft.",
       "Example is the Mozilla Public License.",
-      "Flexibility in combining code."
+      "Flexibility in combining code.",
+      "Only modifications to the licensed code need to be open source."
     ]
   },
   {
@@ -217,7 +239,8 @@ const wordList = [
       "Allows linking with proprietary code.",
       "Requires changes to MPL code to be open.",
       "Used by Firefox.",
-      "Balances openness and proprietary use."
+      "Balances openness and proprietary use.",
+      "A free and open-source software license by Mozilla."
     ]
   },
   {
@@ -227,37 +250,41 @@ const wordList = [
       "Minimal restrictions on use.",
       "Allows proprietary derivatives.",
       "Examples include MIT and BSD.",
-      "Grants broad freedoms to users."
+      "Grants broad freedoms to users.",
+      "Open source licenses with few requirements on redistribution."
     ]
   },
   {
-    word: "mit license",
+    word: "mit",
     hints: [
       "A short and simple permissive license.",
       "Allows almost any use with attribution.",
       "Widely used open source license.",
       "Very few conditions.",
-      "Known for its brevity."
+      "Known for its brevity.",
+      "A highly permissive open-source license."
     ]
   },
   {
-    word: "bsd license",
+    word: "bsd",
     hints: [
       "Family of permissive open source licenses.",
       "Allows redistribution with minimal restrictions.",
       "Various versions exist.",
       "Originated at the University of California.",
-      "Another popular permissive option."
+      "Another popular permissive option.",
+      "A family of permissive free software licenses."
     ]
   },
   {
-    word: "apache license",
+    word: "apache",
     hints: [
       "Permissive license with patent grant.",
       "Explicitly addresses patent rights.",
       "Used by many large projects.",
       "Encourages open collaboration.",
-      "Focuses on community and stability."
+      "Focuses on community and stability.",
+      "A permissive free software license by the Apache Foundation."
     ]
   },
   {
@@ -267,7 +294,8 @@ const wordList = [
       "Usage rights are unclear.",
       "Treat with caution.",
       "Default copyright applies.",
-      "Lack of defined permissions."
+      "Lack of defined permissions.",
+      "Software whose use, modification, and distribution are undefined."
     ]
   },
   {
@@ -277,7 +305,8 @@ const wordList = [
       "Waives all copyright rights.",
       "Allows maximum freedom of use.",
       "Treated as if no copyright existed.",
-      "Aims for complete openness."
+      "Aims for complete openness.",
+      "A public dedication tool which allows creators to waive all copyright."
     ]
   },
   {
@@ -287,10 +316,14 @@ const wordList = [
       "Free for anyone to use.",
       "Can occur after copyright expires.",
       "No restrictions on usage.",
-      "Belongs to everyone."
+      "Belongs to everyone.",
+      "Works where intellectual property rights have expired, have been forfeited, or are inapplicable."
     ]
-  },
-  //TOPIC 11
+  }
+];
+
+// TOPIC 11: SOCIAL NETWORKING
+const wordList2 = [ //change to wordList and uncomment above to start hangman game here
   {
     word: "viral marketing",
     hints: [
@@ -298,8 +331,9 @@ const wordList = [
       "One person shares it, then many more follow—just like a chain reaction",
       "This type of promotion relies on people passing it along",
       "Think of it as word-of-mouth advertising powered by social media",
-      "It grows fast, like a meme or video everyone suddenly talks about"
-     ]
+      "It grows fast, like a meme or video everyone suddenly talks about",
+      "The goal is organic sharing that reaches a large audience quickly."
+    ]
   },
   {
     word: "company owned networking website",
@@ -309,7 +343,8 @@ const wordList = [
       "The company has full control over the site's design and content",
       "Think of it as Facebook, but made just for one company’s needs",
       "It’s a private online space where the company manages all interactions",
-     ]
+      "Facilitates communication and engagement within a specific organization."
+    ]
   },
   {
     word: "social networking",
@@ -319,7 +354,8 @@ const wordList = [
       "This platform lets users share their thoughts, photos, and life updates",
       "It breaks down distance and time by keeping everyone socially connected online",
       "You can meet friends, join groups, and stay updated—all in one place",
-     ]
+      "The use of dedicated websites and applications to interact with others."
+    ]
   },
   {
     word: "social network in hiring",
@@ -329,7 +365,8 @@ const wordList = [
       "Social media has become a tool in the recruitment process",
       "It’s the modern way of hiring through online connections",
       "A tweet or post might just land you a job—or cost you one",
-     ]
+      "Utilizing online platforms to identify and recruit potential candidates."
+    ]
   },
   {
     word: "direct advertising",
@@ -339,7 +376,63 @@ const wordList = [
       "It’s when businesses pay to show ads straight to users online",
       "This method uses paid placements to promote products or services",
       "It targets users directly with promotional messages on digital platforms",
-     ]
+      "A form of paid online promotion delivered straight to the audience."
+    ]
+  },
+  {
+    word: "cyberbullying",
+    hints: [
+      "It involves using digital devices to harm or harass someone.",
+      "Online platforms can be a space for this negative behavior.",
+      "It can take many forms, like spreading rumors or threats online.",
+      "The victim often feels trapped and isolated by these actions.",
+      "Social media moderation tries to combat this harmful content.",
+      "Repeated and hostile behavior using electronic communication."
+    ]
+  },
+  {
+    word: "cyberstalking",
+    hints: [
+      "It's a pattern of online behavior that makes someone feel afraid.",
+      "This can include monitoring someone's online activities without consent.",
+      "Perpetrators may use social media to track their victims.",
+      "It's a serious offense with legal consequences.",
+      "Feeling constantly watched or followed online is a sign.",
+      "Repeated online harassment that includes threats or monitoring."
+    ]
+  },
+  {
+    word: "deepfake",
+    hints: [
+      "It's a manipulated video or audio that looks and sounds real.",
+      "Artificial intelligence is often used to create these.",
+      "They can spread misinformation or damage someone's reputation.",
+      "Spotting them can be difficult, but there are clues to look for.",
+      "The technology behind them is rapidly advancing.",
+      "Synthetically altered media that convincingly portrays someone doing or saying something they didn't."
+    ]
+  },
+  {
+    word: "data misuse",
+    hints: [
+      "It involves using personal information for purposes not originally intended.",
+      "Companies collecting your online activity need to handle it responsibly.",
+      "This can lead to privacy violations and security risks.",
+      "Regulations like GDPR aim to prevent this unethical practice.",
+      "Understanding privacy policies is important to protect yourself.",
+      "The unauthorized or inappropriate use of collected information."
+    ]
+  },
+  {
+    word: "digital addiction",
+    hints: [
+      "It's an excessive reliance on electronic devices and online platforms.",
+      "Spending too much time on social media can be a sign.",
+      "It can negatively impact mental and physical well-being.",
+      "Setting time limits and taking breaks can help manage it.",
+      "Feeling anxious when unable to access devices is a symptom.",
+      "Compulsive and harmful overuse of digital technologies."
+    ]
   }
 ];
 
